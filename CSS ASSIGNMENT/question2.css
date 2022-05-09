@@ -1,0 +1,13 @@
+body{
+    border: 2px solid black;
+        
+}
+.main{
+    background-color: aqua;
+}
+h2{
+    text-decoration: line-through;
+}
+h3{
+    text-decoration: underline;
+}

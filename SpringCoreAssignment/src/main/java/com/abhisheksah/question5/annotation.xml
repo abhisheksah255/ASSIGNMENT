@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+<context:annotation-config/>    
+
+<bean class="com.abhisheksah.question5.QuestionAnnotation" name="student">
+<property name="studentname" value="Amandeep"></property>
+<property name="studentId" value="101"></property>
+<property name="studentclass" value="12"></property>
+</bean>
+
+
+
+<bean class="com.abhisheksah.question5.Address"  name ="addressvalue">
+<property name="city" value="Lucknow"/>
+<property name="state" value="uttar pradesh"/>
+<property name="zip" value="226002"/>
+<property name="country" value="India"/>
+<property name="street" value="mohan chauk"/>
+</bean>
+
+<bean class="com.abhisheksah.question5.Customer" name="customer">
+		<property name="customerId" value="007"/>
+    	<property name="customerName" value="James Bond"/>
+    	<property name="customerContact" value="99663322255"/>
+		
+</bean>
+
+
+
+</beans>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+  <bean name="data" class="com.abhisheksah.question2.Question">
+  <property name="questionId" value="01"/>
+  <property name="question" value="What is your name?"/>
+ <property name="answer">
+ <list>
+ <value>My name is Abhishek Kumar Sah</value>
+ <value>My father name is Pramod Kumar sah</value>
+      <!--  <null/> -->
+ </list>
+ </property>
+ 
+ 
+ 
+ <property name="answer1">
+ <set>
+ <value>My name is Abhishek Kumar Sah</value>
+ <value>My father name is Pramod Kumar sah</value>
+ </set>
+ </property>
+ 
+ 
+ 
+ <property name="answer2">
+ <map>
+ <entry key="01" value="My name is Abhishek Kumar sah"/>
+ <entry key="02" value="My father name is Pramod Kumar sah"/>
+ </map>
+ </property>
+  
+  </bean>
+  
+  <bean name="data1" class="com.abhisheksah.question2.Question">
+  <property name="questionId" value="02"/>
+  <property name="question" value="What is your father's name?"/>
+  </bean>
+
+
+</beans>

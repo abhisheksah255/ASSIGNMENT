@@ -1,0 +1,10 @@
+.main{
+    border: 2px solid black;
+    background-color: aquamarine;
+}
+p.one{
+    text-transform: uppercase;
+}
+p.two{
+    text-transform: capitalize;
+}

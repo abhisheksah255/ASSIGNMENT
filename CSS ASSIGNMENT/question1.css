@@ -1,0 +1,13 @@
+body{
+border: 1px solid black;
+}
+h1{
+    background-color: blue;
+}
+.main{
+    background-color: rgb(163, 157, 157);
+    
+}
+.own{
+    background-color: aqua;
+}

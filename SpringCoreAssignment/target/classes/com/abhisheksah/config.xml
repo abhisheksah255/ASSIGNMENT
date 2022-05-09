@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+    
+
+<bean class="com.abhisheksah.question1.Address"  name ="addressofcustomer">
+<property name="city" value="Lucknow"/>
+<property name="state" value="uttar pradesh"/>
+<property name="zip" value="226002"/>
+<property name="country" value="India"/>
+<property name="street" value="mohan chauk"/>
+</bean>
+
+
+<bean class="com.abhisheksah.question1.Address"  name ="address3">
+<property name="city" value="Alampuri"/>
+<property name="state" value="Patna"/>
+<property name="zip" value="216122"/>
+<property name="country" value="India"/>
+<property name="street" value="GokulDhamm "/>
+</bean>
+
+
+<bean class="com.abhisheksah.question1.Customer" name="dataofcustomer">
+		<property name="customerId" value="007"/>
+    	<property name="customerName" value="James Bond"/>
+    	<property name="customerContact" value="99663322255"/>
+  	  		
+		<!-- <property name="customerAddress">
+		<ref bean="addressofcustomer"/>
+		</property> this is another method to input customeraddress-->
+		<property name="customerAddress" ref="addressofcustomer"/>
+</bean>
+
+		
+<bean class="com.abhisheksah.question1.Customer" name="customer3">
+		<property name="customerId" value="102"/>
+    	<property name="customerName" value="Chanki Panday"/>
+    	<property name="customerContact" value="996633545"/>
+    	<property name="customerAddress" ref="address3"/>		
+</bean>
+
+ <bean class="com.abhisheksah.question1.Customer" name="customer2" p:customerId="123" p:customerName="Abhishek kumar sah" p:customerContact="7894548965"  p:customerAddress-ref="addressofcustomer"/>
+
+</beans>
